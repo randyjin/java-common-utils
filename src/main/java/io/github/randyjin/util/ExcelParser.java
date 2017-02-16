@@ -14,7 +14,7 @@ import java.util.List;
  * @author 奕超
  * @date 2017/2/15
  */
-public class ExcelOperatorUtils {
+public class ExcelParser {
 
 	public static List<List<String>> parseExcelOrNumber(File file, int sheetIndex, int rowStart, int rowEnd,
 	        int cellStart, int cellEnd, boolean removeBlankRow) throws IOException, ExcelOutOfMaxException {

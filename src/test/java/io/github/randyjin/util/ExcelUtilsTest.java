@@ -26,7 +26,7 @@ public class ExcelUtilsTest {
 	public void testXlsxRemoveBlankRow() throws IOException, ExcelOutOfMaxException {
 		ClassLoader classLoader = getClass().getClassLoader();
 		File file = new File(classLoader.getResource("test1.xlsx").getFile());
-		List<List<String>> excelContent = ExcelOperatorUtils.parseExcelOrNumber(file,0, 0,5,0,5, true);
+		List<List<String>> excelContent = ExcelParser.parseExcelOrNumber(file,0, 0,5,0,5, true);
 		System.out.println(excelContent);
 	}
 
@@ -34,7 +34,7 @@ public class ExcelUtilsTest {
 	public void testXlsxWithRowAndCell() throws IOException, ExcelOutOfMaxException {
 		ClassLoader classLoader = getClass().getClassLoader();
 		File file = new File(classLoader.getResource("test1.xlsx").getFile());
-		List<List<String>> excelContent = ExcelOperatorUtils.parseExcelOrNumber(file,0, 0,4,0,4);
+		List<List<String>> excelContent = ExcelParser.parseExcelOrNumber(file,0, 0,4,0,4);
 		System.out.println(excelContent);
 	}
 
@@ -42,7 +42,7 @@ public class ExcelUtilsTest {
 	public void testXlsxWithoutRowAndCellWithRemoveBlankRow() throws IOException, ExcelOutOfMaxException {
 		ClassLoader classLoader = getClass().getClassLoader();
 		File file = new File(classLoader.getResource("test1.xlsx").getFile());
-		List<List<String>> excelContent = ExcelOperatorUtils.parseExcelOrNumber(file,0, true);
+		List<List<String>> excelContent = ExcelParser.parseExcelOrNumber(file,0, true);
 		System.out.println(excelContent);
 	}
 
@@ -50,7 +50,7 @@ public class ExcelUtilsTest {
 	public void testXlsxWithoutRowAndCell() throws IOException, ExcelOutOfMaxException {
 		ClassLoader classLoader = getClass().getClassLoader();
 		File file = new File(classLoader.getResource("test1.xlsx").getFile());
-		List<List<String>> excelContent = ExcelOperatorUtils.parseExcelOrNumber(file,0);
+		List<List<String>> excelContent = ExcelParser.parseExcelOrNumber(file,0);
 		System.out.println(excelContent);
 	}
 
@@ -58,7 +58,7 @@ public class ExcelUtilsTest {
 	public void testXls() throws IOException, ExcelOutOfMaxException {
 		ClassLoader classLoader = getClass().getClassLoader();
 		File file = new File(classLoader.getResource("test2.xls").getFile());
-		List<List<String>> excelContent = ExcelOperatorUtils.parseExcelOrNumber(file,0, 0,4,0,4, true);
+		List<List<String>> excelContent = ExcelParser.parseExcelOrNumber(file,0, 0,4,0,4, true);
 		System.out.println(excelContent);
 	}
 
