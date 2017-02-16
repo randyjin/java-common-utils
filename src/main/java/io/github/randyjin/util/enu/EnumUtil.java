@@ -1,4 +1,4 @@
-package io.github.randyjin.util;
+package io.github.randyjin.util.enu;
 
 import io.github.randyjin.enu.EnumInterface;
 

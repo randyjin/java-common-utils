@@ -1,6 +1,7 @@
-package io.github.randyjin.util;
+package io.github.randyjin.util.excel;
 
 import io.github.randyjin.exception.ExcelOutOfMaxException;
+import io.github.randyjin.util.excel.ExcelParser;
 import org.junit.Test;
 
 import java.io.File;

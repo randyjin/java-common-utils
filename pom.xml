@@ -14,8 +14,6 @@
         <common.lang.version>2.6</common.lang.version>
         <common.collections.version>4.1</common.collections.version>
         <junit.version>4.12</junit.version>
-        <tika.version>0.2</tika.version>
-        <commons.compress.version>1.13</commons.compress.version>
     </properties>
     <dependencies>
         <dependency>
@@ -29,11 +27,6 @@
             <version>${poi.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.apache</groupId>
-            <artifactId>tika</artifactId>
-            <version>${tika.version}</version>
-        </dependency>
-        <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
@@ -42,11 +35,6 @@
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
             <version>${common.lang.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-compress</artifactId>
-            <version>${commons.compress.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
