@@ -1,16 +1,6 @@
-/*
- * Copyright (C), 2014-2015, 杭州小卡科技有限公司
- * FileName: EnumUtil.java
- * Author:   yichao
- * Date:    16/8/18 下午6:02
- * Description:
- */
 package io.github.randyjin.util;
 
-import com.google.common.collect.Lists;
 import io.github.randyjin.enu.EnumInterface;
-
-import java.util.List;
 
 /**
  * EnumUtil
@@ -146,7 +136,7 @@ public class EnumUtil {
 	 * 根据code获取desc,不采用default值
 	 *
 	 * @param enumClass
-	 * @param code
+	 * @param desc
 	 * @param <E>
 	 * @return
 	 */

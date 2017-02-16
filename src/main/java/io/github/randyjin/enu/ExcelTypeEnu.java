@@ -3,7 +3,6 @@ package io.github.randyjin.enu;
 public enum ExcelTypeEnu implements EnumInterface<ExcelTypeEnu> {
     EXCEL_2003(1,"excel2003"),
     EXCEL_2007(2,"excel2007"),
-    MAC_NUMBER(3,"mac_number"),
     ;
 
     private int code;

@@ -1,10 +1,3 @@
-/*
- * Copyright (C), 2014-2015, 杭州小卡科技有限公司
- * FileName: Excel2007Utils.java
- * Author:   奕超
- * Date:    2017/2/16 上午9:43
- * Description:
- */
 package io.github.randyjin.util.excel;
 
 import io.github.randyjin.exception.ExcelOutOfMaxException;

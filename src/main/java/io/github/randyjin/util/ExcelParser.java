@@ -2,6 +2,8 @@ package io.github.randyjin.util;
 
 import io.github.randyjin.enu.ExcelTypeEnu;
 import io.github.randyjin.exception.ExcelOutOfMaxException;
+import io.github.randyjin.util.excel.Excel2003Utils;
+import io.github.randyjin.util.excel.Excel2007Utils;
 import org.apache.poi.POIXMLDocument;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 
