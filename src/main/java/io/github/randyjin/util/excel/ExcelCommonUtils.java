@@ -5,7 +5,7 @@
  * Date:    2017/2/16 上午9:47
  * Description:
  */
-package io.github.randyjin.util;
+package io.github.randyjin.util.excel;
 
 import com.google.common.collect.Lists;
 import io.github.randyjin.exception.ExcelOutOfMaxException;
@@ -13,7 +13,6 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
 
 import java.util.List;
 

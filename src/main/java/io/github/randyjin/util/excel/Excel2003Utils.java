@@ -5,9 +5,10 @@
  * Date:    2017/2/16 上午9:42
  * Description:
  */
-package io.github.randyjin.util;
+package io.github.randyjin.util.excel;
 
 import io.github.randyjin.exception.ExcelOutOfMaxException;
+import io.github.randyjin.util.excel.ExcelCommonUtils;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
