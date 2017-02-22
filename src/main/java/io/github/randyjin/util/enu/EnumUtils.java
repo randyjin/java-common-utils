@@ -8,7 +8,7 @@ import io.github.randyjin.enu.EnumInterface;
  * @author yichao
  * @date 16/8/18
  */
-public class EnumUtil {
+public class EnumUtils {
 
     /**
      * 通过枚举name查找枚举对象
