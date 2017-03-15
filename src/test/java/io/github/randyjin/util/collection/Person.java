@@ -7,6 +7,8 @@
  */
 package io.github.randyjin.util.collection;
 
+import java.util.List;
+
 /**
  * Person
  *
@@ -21,6 +23,10 @@ public class Person {
 
     private String idCard;
 
+    private Person person;
+
+    private List<Person> personList;
+
     public Person() {
     }
 
@@ -28,6 +34,14 @@ public class Person {
         this.name = name;
         this.age = age;
         this.idCard = idCard;
+    }
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
     }
 
     public String getName() {
@@ -52,5 +66,13 @@ public class Person {
 
     public void setIdCard(String idCard) {
         this.idCard = idCard;
+    }
+
+    public List<Person> getPersonList() {
+        return personList;
+    }
+
+    public void setPersonList(List<Person> personList) {
+        this.personList = personList;
     }
 }
