@@ -11,3 +11,6 @@
 * 定义的枚举实现EnumInterface接口,EnumUtils就可以进行操作了
 * 提供各种枚举操作
 * 局限性:这里枚举只有最常用的`int code`和`String desc`两个属性;如果有其他的需求可以丰富EnumInterface和EnumUtils
+
+## MyStringUtil(个性化String操作)
+* 替换操作,指定前面留几个字符,后面留几个字符,指定替换操作

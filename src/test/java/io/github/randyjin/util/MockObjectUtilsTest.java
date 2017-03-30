@@ -8,6 +8,7 @@
 package io.github.randyjin.util;
 
 import io.github.randyjin.util.collection.Person;
+import io.github.randyjin.util.collection.Student;
 import io.github.randyjin.util.mock.MockObjectUtils;
 import org.junit.Test;
 
@@ -21,7 +22,7 @@ public class MockObjectUtilsTest {
 
     @Test
     public void testMockObjectToJson() throws InstantiationException, IllegalAccessException {
-        String json = MockObjectUtils.mockObjectToJson(Person.class);
+        String json = MockObjectUtils.mockObjectToJson(Student.class);
         System.out.println(json);
     }
 }

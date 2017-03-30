@@ -14,6 +14,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -30,8 +31,8 @@ public class MockObjectUtils {
 
     public static Object mockObject(Class clazz) throws IllegalAccessException, InstantiationException {
         Object object = clazz.newInstance();
-        Field[] fields = clazz.getDeclaredFields();
-        if(fields != null && fields.length > 0) {
+        List<Field> fields = getAllField(clazz);
+        if(fields != null && fields.size() > 0) {
             for(Field field : fields) {
                 Class fieldType = field.getType();
                 if(fieldType.equals(int.class) || fieldType.equals(Integer.class)) {
@@ -73,5 +74,21 @@ public class MockObjectUtils {
             }
         }
         return object;
+    }
+
+    private static List<Field> getAllField(Class clazz) {
+        List<Field> result = new ArrayList<Field>();
+        Field[] fields = clazz.getDeclaredFields();
+        if(fields != null&& fields.length>0) {
+            result.addAll(Arrays.asList(fields));
+        }
+        Class superClass = clazz.getSuperclass();
+        if(superClass != null) {
+            List<Field> superFieldList = getAllField(superClass);
+            if(superFieldList != null && superFieldList.size() > 0) {
+                result.addAll(superFieldList);
+            }
+        }
+        return result;
     }
 }
