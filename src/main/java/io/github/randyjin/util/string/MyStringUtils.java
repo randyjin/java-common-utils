@@ -1,10 +1,3 @@
-/*
- * Copyright (C), 2014-2015, 杭州小卡科技有限公司
- * FileName: MyStringUtils.java
- * Author:   奕超
- * Date:    2017/3/30 下午3:01
- * Description:
- */
 package io.github.randyjin.util.string;
 
 import org.apache.commons.lang.StringUtils;
